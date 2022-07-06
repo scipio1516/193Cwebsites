@@ -1,0 +1,85 @@
+h1,h2,h3,h4,.liel {
+	font-family:Arial;
+	margin:0;
+	padding:0;
+}
+div {
+	padding: 7px 7px 7px 7px;
+}
+img {
+	padding:10px 10px 5px 0px;
+	max-width:400px;
+	float:left;
+}
+
+h1 {
+	color:#cc0000;
+	font-weight:bold;
+}
+
+h2 {
+	color:#cc0000;
+	font-weight:bold;
+	font-size:12pt;
+	
+}
+
+h3 {
+	font-size:18pt;
+	font-weight:bold;
+}
+
+h4 {
+	font-size:14pt;
+	font-weight:bold;
+}
+
+.liel {
+	font-size:12pt;
+	font-style:italic;
+	border-width: 0px 0px 2px 0px;
+	border-color: black;
+	border-style: solid;
+	
+}
+
+@media only screen and (max-width: 650px) {
+	h1 {
+		font-size:28pt;
+	}
+	
+	img {
+		max-width:100%;
+	}
+}
+
+@media only screen and (max-width: 815px) {
+	h1 {
+		font-size:32pt;
+	}
+}
+
+@media only screen and (min-width: 816px) {
+	h1 {
+		font-size:36pt;
+		display:inline;
+	}
+	.stpe {
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 1;	
+		grid-row-end: 2;
+		
+	}
+	h2 {
+		float:right;
+		width:14ex;
+		display:inline;
+	}
+	body {
+		display:grid;
+		grid-template-columns: 500px 300px; 
+		grid-template-rows: 60px 1fr;
+		margin-left: calc((100% - 815px) / 2);
+	}
+}
